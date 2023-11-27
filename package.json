@@ -1,0 +1,14 @@
+{
+  "name": "marvelcmedia",
+  "version": "1.0.0",
+  "description": "landing page for marvel creative media",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "author": "Tayo",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.5"
+  }
+}
