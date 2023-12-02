@@ -1,0 +1,32 @@
+.header {
+    height: 110vh;
+    width: auto;
+    background-image: linear-gradient(
+        rgba($color-header-blue, 0.7), 
+        rgba($color-header-black, 0.7)),
+    url(../images/designer2-x.jpg);
+
+    clip-path: polygon(0 0, 100% 0%, 100% 70%, 0% 100%);
+
+
+    &__logo-box {
+      position: absolute;
+      top: 6rem;
+      left: 6rem;
+  
+  }
+  
+  &__logo {
+     height: 5rem;
+  
+  }
+  
+  
+  &__text-box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+  }
+}
