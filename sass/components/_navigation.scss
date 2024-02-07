@@ -1,0 +1,41 @@
+.header__nav {
+    position: absolute;
+    top: 7rem;
+    left: 65rem;
+    
+    &--items, &:active {
+        font-size: $default-font-size;
+        color: $color-white;
+       
+       
+      
+        
+    }
+
+
+    &--link {
+        font-size: $default-font-size;
+        display: inline-flex;
+        list-style: none;
+
+
+
+        
+       
+
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+
+    &--hover {
+        text-decoration: none;
+        color: $color-white;
+    }
+
+    
+}
+
+
+
