@@ -1,0 +1,26 @@
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;     
+    height: 100%;     
+    width: 100%;
+    z-index: -1;
+    opacity: .11
+
+  
+
+   
+
+}
+
+
+.bg-video__content {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+
+   @media only screen and (max-width: $bp-smallest) {
+                 object-fit: fill;
+                 object-position: 50%;
+   }   
+}
