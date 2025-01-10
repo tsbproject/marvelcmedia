@@ -23,3 +23,12 @@
 .mt-md {margin-top: 3rem;}
 .mt-lg{margin-top: 4rem;}
 .mt-hg {margin-top: 8rem;}
+
+
+
+
+
+@media only screen and (max-width:$bp-smallest) {
+    .hide-sm {visibility: hidden;}
+
+}

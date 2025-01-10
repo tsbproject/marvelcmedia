@@ -40,6 +40,14 @@
     grid-column: col-start 2 / col-start 10;
 
     display: grid;
+
+    margin-top: 15rem;
+
+    @media only screen and (max-width:$bp-smallest) {
+        grid-column: full-start / full-end;
+       
+
+    }
 }
 
 
@@ -50,6 +58,13 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
     align-content: center;
+
+
+    @media only screen and (max-width:$bp-smallest) {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 3rem;
+
+    }
     
 
 
