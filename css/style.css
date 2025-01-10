@@ -52,7 +52,7 @@ body {
 }
 @media only screen and (max-width: 25em) {
   .container.home-layout {
-    grid-template-rows: 110vh 270vh min-content;
+    grid-template-rows: 110vh min-content min-content;
     grid-template-columns: repeat(auto-fit, minmax(0vw, 1fr));
   }
 }
@@ -296,6 +296,11 @@ body {
 .composition {
   position: relative;
 }
+@media only screen and (max-width: 25em) {
+  .composition {
+    left: 5rem;
+  }
+}
 .composition__photo {
   width: 55%;
   box-shadow: 0 1.5rem 4rem rgba(20, 24, 9, 0.4);
@@ -305,17 +310,40 @@ body {
   transition: all 0.2s;
   outline-offset: 2rem;
 }
+@media only screen and (max-width: 25em) {
+  .composition__photo {
+    width: 38%;
+  }
+}
 .composition__photo--p1 {
   left: 0;
   top: -2rem;
+}
+@media only screen and (max-width: 25em) {
+  .composition__photo--p1 {
+    left: 0;
+    top: 2rem;
+  }
 }
 .composition__photo--p2 {
   right: 0;
   top: 2rem;
 }
+@media only screen and (max-width: 25em) {
+  .composition__photo--p2 {
+    right: 12rem;
+    top: 2rem;
+  }
+}
 .composition__photo--p3 {
   left: 20%;
   top: 10rem;
+}
+@media only screen and (max-width: 25em) {
+  .composition__photo--p3 {
+    left: 20%;
+    top: 7rem;
+  }
 }
 .composition__photo:hover {
   outline: 1.5rem solid #11009E;
@@ -882,6 +910,7 @@ hr {
 @media only screen and (max-width: 56.25em) {
   .home-about {
     grid-template-columns: repeat(1, 1fr);
+    margin-top: 10rem;
   }
 }
 @media only screen and (max-width: 37.05em) {
@@ -899,7 +928,6 @@ hr {
 @media only screen and (max-width: 25em) {
   .home-about {
     grid-template-columns: repeat(1, 1fr);
-    margin-top: 10rem;
   }
 }
 
