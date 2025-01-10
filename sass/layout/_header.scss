@@ -11,6 +11,22 @@
    
     clip-path: polygon(0 0, 100% 0%, 100% 70%, 0% 100%);
     position: relative;
+
+    @media only screen and (max-width:$bp-medium) {
+      clip-path: polygon(0 0, 100% 0%, 100% 92%, 0% 100%);
+      
+}
+
+    @media only screen and (max-width:$bp-small) {
+      clip-path: polygon(0 0, 100% 0%, 100% 92%, 0% 100%);
+      
+}
+
+    @media only screen and (max-width:$bp-smaller) {
+      clip-path: polygon(0 0, 100% 0%, 100% 92%, 0% 100%);
+      
+}
+ 
     
     @media only screen and (max-width:$bp-smallest) {
         clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);

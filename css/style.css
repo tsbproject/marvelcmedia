@@ -17,7 +17,7 @@ body {
 
 .container.home-layout {
   display: grid;
-  grid-template-rows: repeat(4, min-content);
+  grid-template-rows: repeat(3, min-content);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 }
 @media only screen and (max-width: 75em) {
@@ -34,25 +34,25 @@ body {
 }
 @media only screen and (max-width: 56.25em) {
   .container.home-layout {
-    grid-template-rows: repeat(3, min-content);
+    grgrid-template-rows: 110vh 150vh repeat(1, min-content);
     grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
   }
 }
 @media only screen and (max-width: 37.05em) {
   .container.home-layout {
-    grid-template-rows: 20vh 100vh min-content 300vw min-content repeat(9, min-content);
+    grid-template-rows: 110vh 140vh repeat(1, min-content);
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   }
 }
 @media only screen and (max-width: 31.25em) {
   .container.home-layout {
-    grid-template-rows: 20vh 120vh min-content 300vw min-content repeat(9, min-content);
-    grid-template-columns: repeat(auto-fit, minmax(0vw, 1fr));
+    grid-template-rows: 110vh 115vh repeat(1, min-content);
+    grid-template-columns: repeat(auto-fit, minmax(0rem, 1fr));
   }
 }
 @media only screen and (max-width: 25em) {
   .container.home-layout {
-    grid-template-rows: 110vh 120vh repeat(1, min-content);
+    grid-template-rows: 110vh 270vh min-content;
     grid-template-columns: repeat(auto-fit, minmax(0vw, 1fr));
   }
 }
@@ -356,6 +356,21 @@ body {
   background-image: linear-gradient(#11009e, #141809);
   clip-path: polygon(0 0, 100% 0%, 100% 70%, 0% 100%);
   position: relative;
+}
+@media only screen and (max-width: 56.25em) {
+  .header {
+    clip-path: polygon(0 0, 100% 0%, 100% 92%, 0% 100%);
+  }
+}
+@media only screen and (max-width: 37.05em) {
+  .header {
+    clip-path: polygon(0 0, 100% 0%, 100% 92%, 0% 100%);
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .header {
+    clip-path: polygon(0 0, 100% 0%, 100% 92%, 0% 100%);
+  }
 }
 @media only screen and (max-width: 25em) {
   .header {
@@ -829,6 +844,24 @@ hr {
   padding: 25rem 0;
   margin-top: -35vh;
 }
+@media only screen and (max-width: 56.25em) {
+  .section-about {
+    padding: 10rem 0;
+    margin-top: -15vh;
+  }
+}
+@media only screen and (max-width: 37.05em) {
+  .section-about {
+    padding: 10rem 0;
+    margin-top: -15vh;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .section-about {
+    padding: 10rem 0;
+    margin-top: -15vh;
+  }
+}
 @media only screen and (max-width: 25em) {
   .section-about {
     padding: 10rem 0;
@@ -846,78 +879,94 @@ hr {
   margin-bottom: 10rem;
   animation: fadeIn 2s;
 }
+@media only screen and (max-width: 56.25em) {
+  .home-about {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (max-width: 37.05em) {
+  .home-about {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 10rem;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .home-about {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 10rem;
+  }
+}
 @media only screen and (max-width: 25em) {
   .home-about {
     grid-template-columns: repeat(1, 1fr);
     margin-top: 10rem;
-    margin-bottom: 0rem;
   }
 }
 
-.section-services {
+.section-home-services {
   grid-column: col-start 2/col-start 10;
   display: grid;
 }
 @media only screen and (max-width: 56.25em) {
-  .section-services {
+  .section-home-services {
     grid-column: full-start/full-end;
   }
 }
 @media only screen and (max-width: 37.05em) {
-  .section-services {
+  .section-home-services {
     grid-column: full-start/full-end;
   }
 }
 @media only screen and (max-width: 31.25em) {
-  .section-services {
+  .section-home-services {
     grid-column: full-start/full-end;
   }
 }
 @media only screen and (max-width: 25em) {
-  .section-services {
+  .section-home-services {
     grid-column: full-start/full-end;
   }
 }
 
-.services-heading {
+.home-services-heading {
   justify-content: center;
   align-content: center;
   text-align: center;
   text-decoration: line-through;
 }
 
-.services {
+.home-services {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
   align-content: center;
 }
 @media only screen and (max-width: 56.25em) {
-  .services {
+  .home-services {
     grid-template-columns: repeat(1, 1fr);
     padding: 3rem 3rem;
   }
 }
 @media only screen and (max-width: 37.05em) {
-  .services {
+  .home-services {
     grid-template-columns: repeat(1, 1fr);
     padding: 3rem 3rem;
   }
 }
 @media only screen and (max-width: 31.25em) {
-  .services {
+  .home-services {
     grid-template-columns: repeat(1, 1fr);
     padding: 3rem 3rem;
   }
 }
 @media only screen and (max-width: 25em) {
-  .services {
+  .home-services {
     grid-template-columns: repeat(1, 1fr);
-    padding: 3rem 3rem;
+    padding: 3rem 0;
   }
 }
 
-.service {
+.home-service {
   background-color: #9ACD32;
   display: grid;
   grid-template-columns: min-content 1fr;
@@ -926,12 +975,27 @@ hr {
   border-radius: 2rem;
   padding: 3rem;
 }
-.service__icon {
+@media only screen and (max-width: 25em) {
+  .home-service {
+    padding: 2rem 0.8rem;
+  }
+}
+.home-service__icon {
   width: 5rem;
   height: 5rem;
   fill: #11009E;
   grid-row: 1/span 2;
   transform: translateY(-1rem);
+}
+.home-service__btn {
+  grid-column: 1/span 2;
+  width: 30rem;
+  text-align: center;
+}
+@media only screen and (max-width: 25em) {
+  .home-service__btn {
+    width: 20rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

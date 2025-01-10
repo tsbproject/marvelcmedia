@@ -4,10 +4,34 @@
     padding: 25rem 0 ;
     margin-top: -35vh;
 
+
+    @media only screen and (max-width:$bp-medium) {
+        padding: 10rem 0 ;
+        margin-top: -15vh; 
+       
+        
+    }
+
+    @media only screen and (max-width:$bp-small) {
+        padding: 10rem 0 ;
+        margin-top: -15vh; 
+       
+        
+    }
+
+
+    @media only screen and (max-width:$bp-smaller) {
+        padding: 10rem 0 ;
+        margin-top: -15vh; 
+       
+        
+    }
+  
+
     @media only screen and (max-width:$bp-smallest) {
         padding: 10rem 0 ;
         margin-top: -10vh; 
-        // height: 200vh;
+       
         
     }
   
@@ -26,17 +50,41 @@
     margin-bottom: 10rem;
     animation: fadeIn 2s;
 
+
+    @media only screen and (max-width:$bp-medium) {
+        grid-template-columns: repeat(1, 1fr);
+
+        // margin-top: 10rem;
+      
+    }
+
+
+    @media only screen and (max-width:$bp-small) {
+        grid-template-columns: repeat(1, 1fr);
+
+        margin-top: 10rem;
+      
+    }
+
+
+    @media only screen and (max-width:$bp-smaller) {
+        grid-template-columns: repeat(1, 1fr);
+
+        margin-top: 10rem;
+      
+    }
+
     @media only screen and (max-width:$bp-smallest) {
         grid-template-columns: repeat(1, 1fr);
 
         margin-top: 10rem;
-        margin-bottom: 0rem;
+      
     }
 }
 
 
 
-.section-services {
+.section-home-services {
     grid-column: col-start 2 / col-start 10;
 
     display: grid;
@@ -67,7 +115,7 @@
     }
 }
 
-.services-heading {
+.home-services-heading {
     justify-content: center;
     align-content: center;
     text-align: center;
@@ -76,7 +124,7 @@
 }
 
 
-.services {
+.home-services {
     display: grid;
  
 
@@ -105,7 +153,7 @@
 
     @media only screen and (max-width:$bp-smallest) {
         grid-template-columns: repeat(1, 1fr);
-        padding: 3rem 3rem;
+        padding: 3rem 0;
 
     }
     
@@ -115,7 +163,7 @@
 }
 
 
-.service {
+.home-service {
     background-color: $color-primary-yellowgreen-light;
     display: grid;
     grid-template-columns: min-content 1fr;
@@ -123,6 +171,11 @@
     row-gap: 2rem;
     border-radius: 2rem;
     padding: 3rem;
+
+    @media only screen and (max-width:$bp-smallest) {
+        padding: 2rem .8rem;
+
+    }
     
    
    
@@ -133,6 +186,18 @@
         fill: $color-primary-blue;
         grid-row: 1 / span 2 ; // make the icon span down it row
         transform: translateY(-1rem);
+    }
+
+    &__btn {
+       grid-column: 1 / span 2;
+       width: 30rem;
+       text-align: center;
+
+       @media only screen and (max-width:$bp-smallest) {
+           width:  20rem;
+       }
+
+
     }
 }
 
