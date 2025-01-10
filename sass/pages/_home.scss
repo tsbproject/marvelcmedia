@@ -43,6 +43,24 @@
 
     margin-top: 15rem;
 
+    @media only screen and (max-width:$bp-medium) {
+        grid-column: full-start / full-end;
+       
+
+    }
+
+    @media only screen and (max-width:$bp-small) {
+        grid-column: full-start / full-end;
+       
+
+    }
+
+    @media only screen and (max-width:$bp-smaller) {
+        grid-column: full-start / full-end;
+       
+
+    }
+
     @media only screen and (max-width:$bp-smallest) {
         grid-column: full-start / full-end;
        
@@ -58,6 +76,24 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
     align-content: center;
+
+    @media only screen and (max-width:$bp-medium) {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 3rem;
+
+    }
+
+    @media only screen and (max-width:$bp-small) {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 3rem;
+
+    }
+
+    @media only screen and (max-width:$bp-smaller) {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 3rem;
+
+    }
 
 
     @media only screen and (max-width:$bp-smallest) {

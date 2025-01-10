@@ -1,9 +1,11 @@
 .navigation {
-    position: sticky; /* Makes the element sticky */
-    top: 0; /* Distance from the top of the viewport */
-    z-index: 1000; /* Ensures it stays above other elements */
-    background-color: #fff; /* Set background to avoid transparency issues */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+    
+    @media only screen and (max-width:$bp-smallest) {
+        
+
+    }
+
+
 
  
   
@@ -29,6 +31,74 @@
 
         cursor: pointer;
 
+        @media only screen and (max-width:$bp-medium) {
+
+            background-color: $color-primary-yellowgreen;
+            height: 5rem;
+            width: 5rem;
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            border-radius: 50%;
+            z-index: 2000;
+            box-shadow: 0  1rem 3rem rgba($color-primary-black, .1);
+            text-align: center;
+           
+           
+    
+        }
+
+        @media only screen and (max-width:$bp-small) {
+
+            background-color: $color-primary-yellowgreen;
+            height: 5rem;
+            width: 5rem;
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            border-radius: 50%;
+            z-index: 2000;
+            box-shadow: 0  1rem 3rem rgba($color-primary-black, .1);
+            text-align: center;
+           
+           
+    
+        }
+
+        @media only screen and (max-width:$bp-smaller) {
+
+            background-color: $color-primary-yellowgreen;
+            height: 5rem;
+            width: 5rem;
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            border-radius: 50%;
+            z-index: 2000;
+            box-shadow: 0  1rem 3rem rgba($color-primary-black, .1);
+            text-align: center;
+           
+           
+    
+        }
+
+        @media only screen and (max-width:$bp-smallest) {
+
+            background-color: $color-primary-yellowgreen;
+            height: 5rem;
+            width: 5rem;
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            border-radius: 50%;
+            z-index: 2000;
+            box-shadow: 0  1rem 3rem rgba($color-primary-black, .1);
+            text-align: center;
+           
+           
+    
+        }
+
 
 
     }
@@ -43,6 +113,88 @@
         background-image: radial-gradient($color-primary-blue-light,$color-primary-blue);
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+
+          
+        
+
+          
+        @media only screen and (max-width:$bp-medium) {
+
+            height: 5rem;
+            width: 5rem;
+            border-radius: 50%;
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            background-image: radial-gradient($color-primary-blue-light,$color-primary-blue);
+            z-index: 1000;
+            transition: transform .8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    
+                
+               
+               
+        
+            }
+
+          
+        @media only screen and (max-width:$bp-small) {
+
+            height: 5rem;
+            width: 5rem;
+            border-radius: 50%;
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            background-image: radial-gradient($color-primary-blue-light,$color-primary-blue);
+            z-index: 1000;
+            transition: transform .8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    
+                
+               
+               
+        
+            }
+
+          
+        @media only screen and (max-width:$bp-smaller) {
+
+            height: 5rem;
+            width: 5rem;
+            border-radius: 50%;
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            background-image: radial-gradient($color-primary-blue-light,$color-primary-blue);
+            z-index: 1000;
+            transition: transform .8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+    
+                
+               
+               
+        
+            }
+
+        
+        @media only screen and (max-width:$bp-smallest) {
+
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+        position: fixed;
+        top: 2rem;
+        right: 2rem;
+        background-image: radial-gradient($color-primary-blue-light,$color-primary-blue);
+        z-index: 1000;
+        transition: transform .8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+
+            
+           
+           
+    
+        }
+
+
+        
        
 
 
@@ -131,7 +283,28 @@
     &__icon {
         position: relative;
         margin-top: 3.5rem;
-       
+
+        @media only screen and (max-width:$bp-medium) {
+            position: relative;
+            margin-top: 2.5rem;
+        } 
+
+        @media only screen and (max-width:$bp-small) {
+            position: relative;
+            margin-top: 2.5rem;
+        } 
+
+        @media only screen and (max-width:$bp-smaller) {
+            position: relative;
+            margin-top: 2.5rem;
+        }    
+
+        @media only screen and (max-width:$bp-smallest) {
+            position: relative;
+            margin-top: 2.5rem;
+        }       
+        
+        
        &,
        &::before,
        &::after {

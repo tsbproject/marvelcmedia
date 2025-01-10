@@ -22,19 +22,19 @@ body {
 }
 @media only screen and (max-width: 75em) {
   .container.home-layout {
-    grid-template-rows: 20vh 100vh min-content repeat(2, 63vw) repeat(9, min-content);
+    grid-template-rows: repeat(3, min-content);
     grid-template-columns: repeat(auto-fit, minmax(1fr));
   }
 }
 @media only screen and (max-width: 68.75em) {
   .container.home-layout {
-    grid-template-rows: 20vh 100vh min-content repeat(2, 55vw) repeat(9, min-content);
+    grid-template-rows: repeat(3, min-content);
     grid-template-columns: repeat(auto-fit, minmax(1fr));
   }
 }
 @media only screen and (max-width: 56.25em) {
   .container.home-layout {
-    grid-template-rows: 20vh 100vh min-content 330vw min-content repeat(9, min-content);
+    grid-template-rows: repeat(3, min-content);
     grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
   }
 }
@@ -356,8 +356,39 @@ body {
   top: 6rem;
   left: 6rem;
 }
+@media only screen and (max-width: 25em) {
+  .header__logo-box {
+    position: absolute;
+    top: 6rem;
+    left: 1rem;
+  }
+}
 .header__logo {
   height: 5rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .header__logo {
+    width: 7rem;
+    height: 4rem;
+  }
+}
+@media only screen and (max-width: 37.05em) {
+  .header__logo {
+    width: 7rem;
+    height: 4rem;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .header__logo {
+    width: 7rem;
+    height: 4rem;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .header__logo {
+    width: 7rem;
+    height: 4rem;
+  }
 }
 .header__text-box {
   position: absolute;
@@ -388,7 +419,7 @@ body {
 @media only screen and (max-width: 25em) {
   .header-social-icons {
     position: absolute;
-    top: 2.5rem;
+    top: 0.9rem;
     right: 10rem;
   }
 }
@@ -459,13 +490,6 @@ hr {
   color: #fff;
 }
 
-.navigation {
-  position: sticky; /* Makes the element sticky */
-  top: 0; /* Distance from the top of the viewport */
-  z-index: 1000; /* Ensures it stays above other elements */
-  background-color: #fff; /* Set background to avoid transparency issues */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
-}
 .navigation__checkbox {
   display: none;
 }
@@ -482,6 +506,62 @@ hr {
   text-align: center;
   cursor: pointer;
 }
+@media only screen and (max-width: 56.25em) {
+  .navigation__button {
+    background-color: #8AB800;
+    height: 5rem;
+    width: 5rem;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    border-radius: 50%;
+    z-index: 2000;
+    box-shadow: 0 1rem 3rem rgba(20, 24, 9, 0.1);
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 37.05em) {
+  .navigation__button {
+    background-color: #8AB800;
+    height: 5rem;
+    width: 5rem;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    border-radius: 50%;
+    z-index: 2000;
+    box-shadow: 0 1rem 3rem rgba(20, 24, 9, 0.1);
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .navigation__button {
+    background-color: #8AB800;
+    height: 5rem;
+    width: 5rem;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    border-radius: 50%;
+    z-index: 2000;
+    box-shadow: 0 1rem 3rem rgba(20, 24, 9, 0.1);
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .navigation__button {
+    background-color: #8AB800;
+    height: 5rem;
+    width: 5rem;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    border-radius: 50%;
+    z-index: 2000;
+    box-shadow: 0 1rem 3rem rgba(20, 24, 9, 0.1);
+    text-align: center;
+  }
+}
 .navigation__background {
   height: 6rem;
   width: 6rem;
@@ -492,6 +572,58 @@ hr {
   background-image: radial-gradient(#4942E4, #11009E);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+@media only screen and (max-width: 56.25em) {
+  .navigation__background {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background-image: radial-gradient(#4942E4, #11009E);
+    z-index: 1000;
+    transition: transform 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  }
+}
+@media only screen and (max-width: 37.05em) {
+  .navigation__background {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background-image: radial-gradient(#4942E4, #11009E);
+    z-index: 1000;
+    transition: transform 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .navigation__background {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background-image: radial-gradient(#4942E4, #11009E);
+    z-index: 1000;
+    transition: transform 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  }
+}
+@media only screen and (max-width: 25em) {
+  .navigation__background {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background-image: radial-gradient(#4942E4, #11009E);
+    z-index: 1000;
+    transition: transform 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  }
 }
 .navigation__nav {
   height: 100vh;
@@ -547,6 +679,30 @@ hr {
 .navigation__icon {
   position: relative;
   margin-top: 3.5rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .navigation__icon {
+    position: relative;
+    margin-top: 2.5rem;
+  }
+}
+@media only screen and (max-width: 37.05em) {
+  .navigation__icon {
+    position: relative;
+    margin-top: 2.5rem;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .navigation__icon {
+    position: relative;
+    margin-top: 2.5rem;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .navigation__icon {
+    position: relative;
+    margin-top: 2.5rem;
+  }
 }
 .navigation__icon, .navigation__icon::before, .navigation__icon::after {
   width: 3rem;
@@ -620,6 +776,21 @@ hr {
   display: grid;
   margin-top: 15rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .section-services {
+    grid-column: full-start/full-end;
+  }
+}
+@media only screen and (max-width: 37.05em) {
+  .section-services {
+    grid-column: full-start/full-end;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .section-services {
+    grid-column: full-start/full-end;
+  }
+}
 @media only screen and (max-width: 25em) {
   .section-services {
     grid-column: full-start/full-end;
@@ -631,6 +802,24 @@ hr {
   grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
   align-content: center;
+}
+@media only screen and (max-width: 56.25em) {
+  .services {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3rem 3rem;
+  }
+}
+@media only screen and (max-width: 37.05em) {
+  .services {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3rem 3rem;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .services {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3rem 3rem;
+  }
 }
 @media only screen and (max-width: 25em) {
   .services {
