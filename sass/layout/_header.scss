@@ -98,6 +98,27 @@
    top: 5.1rem;
    right: 23rem;
 
+   @media only screen and (max-width:$bp-medium) {
+    position: absolute;
+    top: 0.9rem;
+    right: 17rem;
+   
+  }
+
+   @media only screen and (max-width:$bp-small) {
+    position: absolute;
+    top: 0.9rem;
+    right: 10rem;
+   
+  }
+
+   @media only screen and (max-width:$bp-smaller) {
+    position: absolute;
+    top: 0.9rem;
+    right: 14rem;
+   
+  }
+
    @media only screen and (max-width:$bp-smallest) {
     position: absolute;
     top: 0.9rem;
@@ -125,6 +146,71 @@
     width: 5rem;
     height: 5rem;
     border: solid .2rem $color-primary-black;
+  }
+
+
+  @media only screen and (max-width:$bp-medium) {
+
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: $color-primary-yellowgreen;
+    border: solid .2rem $color-primary-yellowgreen;
+    border-radius: 50%;
+    padding: .5rem;
+    transition: all .3s;
+  
+  
+  
+    &:hover {
+      fill: $color-primary-black;
+      width: 5rem;
+      height: 5rem;
+      border: solid .2rem $color-primary-black;
+    }
+   
+  }
+
+  @media only screen and (max-width:$bp-small) {
+
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: $color-primary-yellowgreen;
+    border: solid .2rem $color-primary-yellowgreen;
+    border-radius: 50%;
+    padding: .5rem;
+    transition: all .3s;
+  
+  
+  
+    &:hover {
+      fill: $color-primary-black;
+      width: 5rem;
+      height: 5rem;
+      border: solid .2rem $color-primary-black;
+    }
+   
+  }
+
+
+  @media only screen and (max-width:$bp-smaller) {
+
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: $color-primary-yellowgreen;
+    border: solid .2rem $color-primary-yellowgreen;
+    border-radius: 50%;
+    padding: .5rem;
+    transition: all .3s;
+  
+  
+  
+    &:hover {
+      fill: $color-primary-black;
+      width: 5rem;
+      height: 5rem;
+      border: solid .2rem $color-primary-black;
+    }
+   
   }
 
   @media only screen and (max-width:$bp-smallest) {

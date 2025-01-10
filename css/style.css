@@ -17,7 +17,7 @@ body {
 
 .container.home-layout {
   display: grid;
-  grid-template-rows: repeat(3, min-content);
+  grid-template-rows: repeat(4, min-content);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 }
 @media only screen and (max-width: 75em) {
@@ -52,7 +52,7 @@ body {
 }
 @media only screen and (max-width: 25em) {
   .container.home-layout {
-    grid-template-rows: 110vh repeat(2, min-content);
+    grid-template-rows: 110vh 120vh repeat(1, min-content);
     grid-template-columns: repeat(auto-fit, minmax(0vw, 1fr));
   }
 }
@@ -119,7 +119,7 @@ body {
   }
 }
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   line-height: 1.7;
   color: #11009E;
@@ -133,10 +133,21 @@ body {
 }
 .primary-heading--main {
   display: block;
-  font-size: 4.5rem;
-  font-weight: 500;
+  font-size: 5rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
   letter-spacing: 0.5rem;
   animation: moveInLeft 2s;
+}
+@media only screen and (max-width: 25em) {
+  .primary-heading--main {
+    display: block;
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.5rem;
+    animation: moveInLeft 2s;
+  }
 }
 .primary-heading--sub {
   display: block;
@@ -416,6 +427,27 @@ body {
   top: 5.1rem;
   right: 23rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .header-social-icons {
+    position: absolute;
+    top: 0.9rem;
+    right: 17rem;
+  }
+}
+@media only screen and (max-width: 37.05em) {
+  .header-social-icons {
+    position: absolute;
+    top: 0.9rem;
+    right: 10rem;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .header-social-icons {
+    position: absolute;
+    top: 0.9rem;
+    right: 14rem;
+  }
+}
 @media only screen and (max-width: 25em) {
   .header-social-icons {
     position: absolute;
@@ -438,6 +470,57 @@ body {
   width: 5rem;
   height: 5rem;
   border: solid 0.2rem rgba(20, 24, 9, 0.7019607843);
+}
+@media only screen and (max-width: 56.25em) {
+  .social-icon-svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: #8AB800;
+    border: solid 0.2rem #8AB800;
+    border-radius: 50%;
+    padding: 0.5rem;
+    transition: all 0.3s;
+  }
+  .social-icon-svg:hover {
+    fill: rgba(20, 24, 9, 0.7019607843);
+    width: 5rem;
+    height: 5rem;
+    border: solid 0.2rem rgba(20, 24, 9, 0.7019607843);
+  }
+}
+@media only screen and (max-width: 37.05em) {
+  .social-icon-svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: #8AB800;
+    border: solid 0.2rem #8AB800;
+    border-radius: 50%;
+    padding: 0.5rem;
+    transition: all 0.3s;
+  }
+  .social-icon-svg:hover {
+    fill: rgba(20, 24, 9, 0.7019607843);
+    width: 5rem;
+    height: 5rem;
+    border: solid 0.2rem rgba(20, 24, 9, 0.7019607843);
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .social-icon-svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: #8AB800;
+    border: solid 0.2rem #8AB800;
+    border-radius: 50%;
+    padding: 0.5rem;
+    transition: all 0.3s;
+  }
+  .social-icon-svg:hover {
+    fill: rgba(20, 24, 9, 0.7019607843);
+    width: 5rem;
+    height: 5rem;
+    border: solid 0.2rem rgba(20, 24, 9, 0.7019607843);
+  }
 }
 @media only screen and (max-width: 25em) {
   .social-icon-svg {
@@ -774,7 +857,6 @@ hr {
 .section-services {
   grid-column: col-start 2/col-start 10;
   display: grid;
-  margin-top: 15rem;
 }
 @media only screen and (max-width: 56.25em) {
   .section-services {
@@ -795,6 +877,13 @@ hr {
   .section-services {
     grid-column: full-start/full-end;
   }
+}
+
+.services-heading {
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  text-decoration: line-through;
 }
 
 .services {
@@ -829,14 +918,18 @@ hr {
 }
 
 .service {
+  background-color: #9ACD32;
   display: grid;
   grid-template-columns: min-content 1fr;
   column-gap: 2rem;
   row-gap: 2rem;
+  border-radius: 2rem;
+  padding: 3rem;
 }
 .service__icon {
   width: 5rem;
   height: 5rem;
+  fill: #11009E;
   grid-row: 1/span 2;
   transform: translateY(-1rem);
 }

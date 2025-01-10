@@ -41,7 +41,6 @@
 
     display: grid;
 
-    margin-top: 15rem;
 
     @media only screen and (max-width:$bp-medium) {
         grid-column: full-start / full-end;
@@ -66,6 +65,14 @@
        
 
     }
+}
+
+.services-heading {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    text-decoration: line-through;
+
 }
 
 
@@ -109,10 +116,13 @@
 
 
 .service {
+    background-color: $color-primary-yellowgreen-light;
     display: grid;
     grid-template-columns: min-content 1fr;
     column-gap: 2rem;
     row-gap: 2rem;
+    border-radius: 2rem;
+    padding: 3rem;
     
    
    
@@ -120,6 +130,7 @@
     &__icon {
         width: 5rem;
         height: 5rem;
+        fill: $color-primary-blue;
         grid-row: 1 / span 2 ; // make the icon span down it row
         transform: translateY(-1rem);
     }
