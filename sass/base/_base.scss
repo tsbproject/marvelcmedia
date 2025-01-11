@@ -8,14 +8,24 @@
   
   
   html {
-      font-size: 10px;
+     box-sizing: border-box;
+     font-size: 62.5%; //10px/16px 1rem = 10px 
+     font-size: 10px;
+
+     @media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+     }
   
   }
   
   
   body {
-     box-sizing: border-box;
-     font-size: 62.5%; //10px/16px 1rem = 10px 
+     
+    font-family: $font-display;
+    color: $color-primary-blue;
+    font-weight: 300;
+    line-height: 1.6;
+     
   }
 
 

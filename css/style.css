@@ -7,12 +7,21 @@
 }
 
 html {
+  box-sizing: border-box;
+  font-size: 62.5%;
   font-size: 10px;
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
 }
 
 body {
-  box-sizing: border-box;
-  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  color: #11009E;
+  font-weight: 300;
+  line-height: 1.6;
 }
 
 .container.home-layout {
@@ -681,7 +690,7 @@ hr {
     width: 5rem;
     position: fixed;
     top: 2rem;
-    right: 2rem;
+    right: 3.6rem;
     border-radius: 50%;
     z-index: 2000;
     box-shadow: 0 1rem 3rem rgba(20, 24, 9, 0.1);
@@ -745,7 +754,7 @@ hr {
     border-radius: 50%;
     position: fixed;
     top: 2rem;
-    right: 2rem;
+    right: 3.5rem;
     background-image: radial-gradient(#4942E4, #11009E);
     z-index: 1000;
     transition: transform 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);

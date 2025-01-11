@@ -1,9 +1,6 @@
 .navigation {
     
-    @media only screen and (max-width:$bp-smallest) {
-        
-
-    }
+    
 
 
 
@@ -89,7 +86,7 @@
             width: 5rem;
             position: fixed;
             top: 2rem;
-            right: 2rem;
+            right: 3.6rem;
             border-radius: 50%;
             z-index: 2000;
             box-shadow: 0  1rem 3rem rgba($color-primary-black, .1);
@@ -182,7 +179,7 @@
         border-radius: 50%;
         position: fixed;
         top: 2rem;
-        right: 2rem;
+        right: 3.5rem;
         background-image: radial-gradient($color-primary-blue-light,$color-primary-blue);
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
