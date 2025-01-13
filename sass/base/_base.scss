@@ -54,14 +54,14 @@
       
       @media only screen and (max-width: $bp-largest) {
          grid-template-rows:  repeat(3, min-content);
-         grid-template-columns: repeat(auto-fit, minmax(1fr));
+         // grid-template-columns: repeat(auto-fit, minmax(1fr));
  
    } 
       
       
       @media only screen and (max-width: $bp-large) {
          grid-template-rows:  repeat(3, min-content);
-         grid-template-columns: repeat(auto-fit, minmax(1fr));
+         // grid-template-columns: repeat(auto-fit, minmax(1fr));
  
    } 
       
@@ -69,27 +69,27 @@
       
       @media only screen and (max-width: $bp-medium) {
          grgrid-template-rows: 110vh 150vh repeat(1, min-content);
-         grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+         // grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
  
    } 
       
       
       @media only screen and (max-width: $bp-small) {
          grid-template-rows: 110vh 140vh repeat(1, min-content);
-         grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+         // grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
  
    }
  
       @media only screen and (max-width: $bp-smaller) {
       grid-template-rows: 110vh 115vh repeat(1, min-content);
-     grid-template-columns: repeat(auto-fit, minmax(0rem, 1fr));
+   //   grid-template-columns: repeat(auto-fit, minmax(0rem, 1fr));
  
  }
      
  
  @media only screen and (max-width: $bp-smallest) {
-   grid-template-rows: 110vh min-content  min-content;
-   //   grid-template-columns: repeat(auto-fit, minmax(0rem, 1fr));
+   grid-template-rows: min-content min-content  min-content;
+    
      
     
     

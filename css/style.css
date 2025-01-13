@@ -32,36 +32,31 @@ body {
 @media only screen and (max-width: 75em) {
   .container.home-layout {
     grid-template-rows: repeat(3, min-content);
-    grid-template-columns: repeat(auto-fit, minmax(1fr));
   }
 }
 @media only screen and (max-width: 68.75em) {
   .container.home-layout {
     grid-template-rows: repeat(3, min-content);
-    grid-template-columns: repeat(auto-fit, minmax(1fr));
   }
 }
 @media only screen and (max-width: 56.25em) {
   .container.home-layout {
     grgrid-template-rows: 110vh 150vh repeat(1, min-content);
-    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
   }
 }
 @media only screen and (max-width: 37.05em) {
   .container.home-layout {
     grid-template-rows: 110vh 140vh repeat(1, min-content);
-    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   }
 }
 @media only screen and (max-width: 31.25em) {
   .container.home-layout {
     grid-template-rows: 110vh 115vh repeat(1, min-content);
-    grid-template-columns: repeat(auto-fit, minmax(0rem, 1fr));
   }
 }
 @media only screen and (max-width: 25em) {
   .container.home-layout {
-    grid-template-rows: 110vh min-content min-content;
+    grid-template-rows: min-content min-content min-content;
   }
 }
 
@@ -907,36 +902,13 @@ hr {
 
 .home-about {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   gap: 5rem;
   justify-content: center;
   padding: 0 3rem;
   margin-top: 10rem;
   margin-bottom: 10rem;
   animation: fadeIn 2s;
-}
-@media only screen and (max-width: 56.25em) {
-  .home-about {
-    grid-template-columns: repeat(1, 1fr);
-    margin-top: 10rem;
-  }
-}
-@media only screen and (max-width: 37.05em) {
-  .home-about {
-    grid-template-columns: repeat(1, 1fr);
-    margin-top: 10rem;
-  }
-}
-@media only screen and (max-width: 31.25em) {
-  .home-about {
-    grid-template-columns: repeat(1, 1fr);
-    margin-top: 10rem;
-  }
-}
-@media only screen and (max-width: 25em) {
-  .home-about {
-    grid-template-columns: repeat(1, 1fr);
-  }
 }
 
 .section-home-services {
@@ -973,31 +945,27 @@ hr {
 
 .home-services {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 5rem;
   align-content: center;
 }
 @media only screen and (max-width: 56.25em) {
   .home-services {
-    grid-template-columns: repeat(1, 1fr);
     padding: 3rem 3rem;
   }
 }
 @media only screen and (max-width: 37.05em) {
   .home-services {
-    grid-template-columns: repeat(1, 1fr);
     padding: 3rem 3rem;
   }
 }
 @media only screen and (max-width: 31.25em) {
   .home-services {
-    grid-template-columns: repeat(1, 1fr);
     padding: 3rem 3rem;
   }
 }
 @media only screen and (max-width: 25em) {
   .home-services {
-    grid-template-columns: repeat(1, 1fr);
     padding: 3rem 0;
   }
 }

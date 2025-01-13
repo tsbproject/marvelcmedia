@@ -42,7 +42,8 @@
 
 .home-about {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    // grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     gap: 5rem;
     justify-content: center;
     padding: 0 3rem;
@@ -51,35 +52,35 @@
     animation: fadeIn 2s;
 
 
-    @media only screen and (max-width:$bp-medium) {
-        grid-template-columns: repeat(1, 1fr);
+    // @media only screen and (max-width:$bp-medium) {
+    //     grid-template-columns: repeat(1, 1fr);
 
-        margin-top: 10rem;
+    //     margin-top: 10rem;
       
-    }
+    // }
 
 
-    @media only screen and (max-width:$bp-small) {
-        grid-template-columns: repeat(1, 1fr);
+    // @media only screen and (max-width:$bp-small) {
+    //     grid-template-columns: repeat(1, 1fr);
 
-        margin-top: 10rem;
+    //     margin-top: 10rem;
       
-    }
+    // }
 
 
-    @media only screen and (max-width:$bp-smaller) {
-        grid-template-columns: repeat(1, 1fr);
+    // @media only screen and (max-width:$bp-smaller) {
+    //     grid-template-columns: repeat(1, 1fr);
 
-        margin-top: 10rem;
+    //     margin-top: 10rem;
       
-    }
+    // }
 
-    @media only screen and (max-width:$bp-smallest) {
-        grid-template-columns: repeat(1, 1fr);
+    // @media only screen and (max-width:$bp-smallest) {
+    //     grid-template-columns: repeat(1, 1fr);
 
-        // margin-top: 10rem;
+    //     // margin-top: 10rem;
       
-    }
+    // }
 }
 
 
@@ -128,31 +129,32 @@
     display: grid;
  
 
-    grid-template-columns: repeat(2, 1fr);
+    // grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 5rem;
     align-content: center;
 
     @media only screen and (max-width:$bp-medium) {
-        grid-template-columns: repeat(1, 1fr);
+        // grid-template-columns: repeat(1, 1fr);
         padding: 3rem 3rem;
 
     }
 
     @media only screen and (max-width:$bp-small) {
-        grid-template-columns: repeat(1, 1fr);
+        // grid-template-columns: repeat(1, 1fr);
         padding: 3rem 3rem;
 
     }
 
     @media only screen and (max-width:$bp-smaller) {
-        grid-template-columns: repeat(1, 1fr);
+        // grid-template-columns: repeat(1, 1fr);
         padding: 3rem 3rem;
 
     }
 
 
     @media only screen and (max-width:$bp-smallest) {
-        grid-template-columns: repeat(1, 1fr);
+        // grid-template-columns: repeat(1, 1fr);
         padding: 3rem 0;
 
     }
