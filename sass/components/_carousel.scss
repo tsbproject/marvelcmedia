@@ -1,0 +1,229 @@
+.portfolio {
+    grid-column: full-start / full-end;
+
+
+    background-color: $color-primary-yellowgreen;
+    margin-top: 0.2rem;
+    padding: 25px;
+    text-align: center;
+   
+  
+    &__header {
+      text-align: center;
+      color: $color-primary-blue;
+      margin-top: 5rem;
+      align-content: center;
+  
+  
+    }
+  
+  
+  }
+  
+.portfolio-inner {
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+
+   
+
+    display: grid;
+    column-gap: 10rem;
+    background-color: $color-white;
+    height: 50rem;
+
+    @media only screen and (max-width:$bp-medium) {
+        grid-template-columns: repeat(1, 1fr);
+       
+    }
+
+   
+   
+    
+  
+  
+    &__item {
+        height: 30rem;
+        background-color: $color-white;
+        box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+        
+       
+        border-radius: 1rem;
+        padding-bottom: 2rem
+    }
+  
+    &__header {
+        font-size: $heading-tertiary-font;
+        font-weight: 700;
+        color: $color-primary-blue-light;
+        text-align: center;
+        margin-top: 1rem;
+  
+  
+  
+        &::hover {
+            color: $color-white;
+        }
+  
+  
+        @media only screen and (max-width:$bp-smaller) {
+  
+          font-size: $default-font-size2;
+          font-weight: 400;
+          color: $color-primary-blue-light;
+          text-align: center;
+          margin-top: 1rem;
+  
+         
+               
+        }
+  
+    }
+  
+  
+    &__text {
+        font-size: $default-font-size;
+        padding: 0 2rem;
+    }
+  
+  
+    &__borderes {
+        font-size: $default-font-size2;
+        font-family: "Oxygen" sans-serif;
+        font-weight: 800;
+        text-align: center;
+        position: relative;
+        top: 1rem;
+        left: 11rem;
+        background-color: $color-white;
+        border: .1rem $color-primary-blue-light solid;
+        border-radius: 3rem;
+        // border-style: ridge;
+        width: 17rem;
+        height: 4.5rem;
+        padding: 1rem 3rem;
+  
+  
+        &:hover {
+            background-color: $color-primary-blue-light;
+        }
+  
+  
+        @media only screen and (max-width:$bp-medium) {
+  
+          font-size: $default-font-size3;
+          font-family: "Oxygen" sans-serif;
+          font-weight: 800;
+          text-align: center;
+          position: relative;
+          top: 1rem;
+          left: 3rem;
+          background-color: $color-white;
+          border: .1rem $color-primary-blue-light solid;
+          border-radius: 3rem;
+          // border-style: ridge;
+          width: 17rem;
+          height: 4rem;
+          padding: 1rem 2rem;
+               
+        }
+       
+  
+        @media only screen and (max-width:$bp-smaller) {
+  
+        font-size: $default-font-size3;
+        font-family: "Oxygen" sans-serif;
+        font-weight: 800;
+        text-align: center;
+        position: relative;
+        top: 1rem;
+        left: 3rem;
+        background-color: $color-white;
+        border: .1rem $color-primary-blue-light solid;
+        border-radius: 3rem;
+        // border-style: ridge;
+        width: 17rem;
+        height: 4rem;
+        padding: 1rem 2rem;
+             
+      }
+  
+      @media only screen and (max-width:$bp-smallest) {
+  
+        font-size: $default-font-size3;
+        font-family: "Oxygen" sans-serif;
+        font-weight: 800;
+        text-align: center;
+        position: relative;
+        top: 1rem;
+        left: 8rem;
+        background-color: $color-white;
+        border: .1rem $color-primary-blue-light solid;
+        border-radius: 3rem;
+        // border-style: ridge;
+        width: 17rem;
+        height: 4rem;
+        padding: 1rem 2rem;
+             
+      }
+       
+       
+  
+    }
+  
+    &__img {
+      height: 20rem;
+    }
+  
+  
+    &__borderes a {
+       
+        text-decoration: none;
+        color: $color-primary-blue;
+  
+  
+        &:hover {
+            color: $color-white;
+        }
+  
+  
+       
+       
+  
+    }
+  }
+  
+  
+   .owl-theme .owl-nav {
+    margin: 5rem 0;
+  }
+  
+   .owl-theme .owl-nav [class*="owl-"] {
+    background: transparent;
+    border: medium none;
+    border-radius: 3px;
+    color: $color-white;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    height: 50px;
+    margin: 8px;
+    padding: 0;
+  }
+  
+   .owl-theme .owl-nav i {
+    background: $color-white repeat scroll 0 0;
+    border: 1px solid $color-primary-yellowgreen;
+    border-radius: 5px;
+    color: $color-primary-yellowgreen;
+    font-size: 25px;
+    height: 50px;
+    overflow: hidden;
+    padding: 10px 15px;
+    width: 50px;
+  }
+  
+   .owl-theme .owl-nav i:hover {
+    background: $color-primary-yellowgreen;
+    color: #fff;
+  }
+  
+

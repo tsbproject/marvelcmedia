@@ -183,11 +183,14 @@
    
    
     &__icon {
-        width: 5rem;
-        height: 5rem;
+        width: 7rem;
+        height: 7rem;
         fill: $color-primary-blue;
         grid-row: 1 / span 2 ; // make the icon span down it row
         transform: translateY(-1rem);
+        border: .2rem solid $color-primary-blue;
+        border-radius: 50%;
+        padding: .8rem;
     }
 
     &__btn {
@@ -202,4 +205,10 @@
 
     }
 }
+
+
+
+
+
+
 
