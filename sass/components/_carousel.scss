@@ -30,11 +30,6 @@
     background-color: $color-white;
     height: 50rem;
 
-    @media only screen and (max-width:$bp-medium) {
-        grid-template-columns: repeat(1, 1fr);
-       
-    }
-
    
    
     
@@ -86,13 +81,18 @@
   
   
     &__borderes {
+        display: flex;
+        justify-self: center;
+        align-items: center;
+
+        
         font-size: $default-font-size2;
         font-family: "Oxygen" sans-serif;
         font-weight: 800;
-        text-align: center;
-        position: relative;
-        top: 1rem;
-        left: 11rem;
+        text-align: end;
+        // position: relative;
+        // top: 1rem;
+        // left: 11rem;
         background-color: $color-white;
         border: .1rem $color-primary-blue-light solid;
         border-radius: 3rem;
@@ -209,21 +209,22 @@
     padding: 0;
   }
   
-   .owl-theme .owl-nav i {
+   .owl-theme .owl-nav svg {
     background: $color-white repeat scroll 0 0;
     border: 1px solid $color-primary-yellowgreen;
     border-radius: 5px;
-    color: $color-primary-yellowgreen;
     font-size: 25px;
-    height: 50px;
+    height: 6rem;
+    width: 6rem;
+    fill: $color-primary-yellowgreen;
     overflow: hidden;
     padding: 10px 15px;
-    width: 50px;
+   
   }
   
-   .owl-theme .owl-nav i:hover {
+   .owl-theme .owl-nav svg:hover {
     background: $color-primary-yellowgreen;
-    color: #fff;
+    fill: #fff;
   }
   
 

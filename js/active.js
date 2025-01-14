@@ -19,8 +19,9 @@ $('#counter-block').ready(function () {
         autoplayTimeout: 6000,
         autoplay: true,
         navText: [
-       "<i class=\"bi bi-chevron-left\" aria-hidden=\"true\"></i>",
-       "<i class=\"bi bi-chevron-right\" aria-hidden=\"true\"></i>"],
+
+            "<svg class=\"svg\"><use href=\"img/sprite.svg#icon-chevron-left\"></use></svg>",
+           "<svg class=\"svg\"><use href=\"img/sprite.svg#icon-chevron-right\"></use></svg>",],
         responsive: {
             992: {
                 items: 3,
