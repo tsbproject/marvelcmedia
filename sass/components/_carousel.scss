@@ -13,6 +13,7 @@
       color: $color-primary-blue;
       margin-top: 5rem;
       align-content: center;
+      filter: brightness(50%);
   
   
     }
@@ -51,6 +52,7 @@
         color: $color-primary-blue-light;
         text-align: center;
         margin-top: 1rem;
+       
   
   
   
@@ -89,21 +91,19 @@
         font-size: $default-font-size2;
         font-family: "Oxygen" sans-serif;
         font-weight: 800;
-        text-align: end;
-        // position: relative;
-        // top: 1rem;
-        // left: 11rem;
+        text-align: center;
         background-color: $color-white;
         border: .1rem $color-primary-blue-light solid;
         border-radius: 3rem;
-        // border-style: ridge;
+    
         width: 17rem;
         height: 4.5rem;
-        padding: 1rem 3rem;
+        padding: 1rem 6rem;
   
   
         &:hover {
-            background-color: $color-primary-blue-light;
+            background-color: $color-primary-blue;
+            transition: all .3s;
         }
   
   
@@ -113,16 +113,29 @@
           font-family: "Oxygen" sans-serif;
           font-weight: 800;
           text-align: center;
-          position: relative;
-          top: 1rem;
-          left: 3rem;
           background-color: $color-white;
           border: .1rem $color-primary-blue-light solid;
           border-radius: 3rem;
-          // border-style: ridge;
           width: 17rem;
-          height: 4rem;
-          padding: 1rem 2rem;
+          height: 4.5rem;
+          padding: 1rem 6rem;
+               
+               
+        }
+
+        @media only screen and (max-width:$bp-small) {
+  
+          font-size: $default-font-size3;
+          font-family: "Oxygen" sans-serif;
+          font-weight: 800;
+          text-align: center;
+          background-color: $color-white;
+          border: .1rem $color-primary-blue-light solid;
+          border-radius: 3rem;
+          width: 17rem;
+          height: 4.5rem;
+          padding: 1rem 6rem;
+               
                
         }
        
@@ -133,16 +146,13 @@
         font-family: "Oxygen" sans-serif;
         font-weight: 800;
         text-align: center;
-        position: relative;
-        top: 1rem;
-        left: 3rem;
         background-color: $color-white;
         border: .1rem $color-primary-blue-light solid;
         border-radius: 3rem;
-        // border-style: ridge;
         width: 17rem;
-        height: 4rem;
-        padding: 1rem 2rem;
+        height: 4.5rem;
+        padding: 1rem 6rem;
+             
              
       }
   
@@ -152,16 +162,12 @@
         font-family: "Oxygen" sans-serif;
         font-weight: 800;
         text-align: center;
-        position: relative;
-        top: 1rem;
-        left: 8rem;
         background-color: $color-white;
         border: .1rem $color-primary-blue-light solid;
         border-radius: 3rem;
-        // border-style: ridge;
         width: 17rem;
-        height: 4rem;
-        padding: 1rem 2rem;
+        height: 4.5rem;
+        padding: 1rem 6rem;
              
       }
        
@@ -178,6 +184,7 @@
        
         text-decoration: none;
         color: $color-primary-blue;
+        
   
   
         &:hover {
