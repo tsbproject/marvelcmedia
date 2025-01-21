@@ -44,7 +44,7 @@
     display: grid;
     // grid-template-columns: repeat(2, 1fr);
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-    gap: 5rem;
+    gap: 3rem;
     justify-content: center;
     padding: 0 3rem;
     margin-top: 10rem;
@@ -52,7 +52,7 @@
 
 
     @media only screen and (max-width:$bp-medium) {
-        height: 180vh;
+        height: 220vh;
      
 
   }
@@ -122,6 +122,8 @@
     }
 
     @media only screen and (max-width:$bp-smaller) {
+        padding: 1rem 0rem;
+        margin-top: -5rem;
         grid-column: full-start / full-end;
        
 
@@ -153,27 +155,34 @@
     margin-top: -40rem;
  
 
-    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+    // grid-emplate-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
-    align-content: center;
+    // align-content: center;
 
     transform: skewY(10deg);
 
+    @media only screen and (max-width:$bp-large) {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 3rem;
+
+    }
+
     @media only screen and (max-width:$bp-medium) {
-        // grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         padding: 3rem 3rem;
 
     }
 
     @media only screen and (max-width:$bp-small) {
-        // grid-template-columns: repeat(1, 1fr);
-        padding: 3rem 3rem;
+        grid-template-columns: repeat(1, 1fr);
+        // padding: 3rem 3rem;
 
     }
 
     @media only screen and (max-width:$bp-smaller) {
         // grid-template-columns: repeat(1, 1fr);
-        padding: 3rem 3rem;
+        padding: 3rem 0;
 
     }
 

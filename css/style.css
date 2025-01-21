@@ -32,31 +32,35 @@ body {
 @media only screen and (max-width: 75em) {
   .container.home-layout {
     grid-template-rows: repeat(4, min-content);
+    grid-template-rows: repeat(3, min-content) 320vh repeat(2, min-content) 70vh 70vh;
   }
 }
 @media only screen and (max-width: 68.75em) {
   .container.home-layout {
     grid-template-rows: repeat(4, min-content);
+    grid-template-rows: repeat(3, min-content) 320vh repeat(2, min-content) 70vh 70vh;
   }
 }
 @media only screen and (max-width: 56.25em) {
   .container.home-layout {
     grid-template-rows: min-content repeat(3, min-content);
+    grid-template-rows: repeat(3, min-content) 400vh repeat(2, min-content) 70vh 70vh;
   }
 }
 @media only screen and (max-width: 37.05em) {
   .container.home-layout {
     grid-template-rows: repeat(4, min-content);
+    grid-template-rows: repeat(3, min-content) 350vh repeat(2, min-content) 70vh 70vh;
   }
 }
 @media only screen and (max-width: 31.25em) {
   .container.home-layout {
-    grid-template-rows: repeat(7, min-content) 250vh;
+    grid-template-rows: repeat(3, min-content) 280vh repeat(2, min-content) 70vh 70vh;
   }
 }
 @media only screen and (max-width: 25em) {
   .container.home-layout {
-    grid-template-rows: repeat(3, min-content) 320vh;
+    grid-template-rows: repeat(3, min-content) 320vh repeat(2, min-content) 70vh 70vh;
   }
 }
 
@@ -1264,7 +1268,7 @@ hr {
 .home-about {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-  gap: 5rem;
+  gap: 3rem;
   justify-content: center;
   padding: 0 3rem;
   margin-top: 10rem;
@@ -1272,7 +1276,7 @@ hr {
 }
 @media only screen and (max-width: 56.25em) {
   .home-about {
-    height: 180vh;
+    height: 220vh;
   }
 }
 @media only screen and (max-width: 37.05em) {
@@ -1310,6 +1314,8 @@ hr {
 }
 @media only screen and (max-width: 31.25em) {
   .section-home-services {
+    padding: 1rem 0rem;
+    margin-top: -5rem;
     grid-column: full-start/full-end;
   }
 }
@@ -1333,24 +1339,30 @@ hr {
 .home-services {
   display: grid;
   margin-top: -40rem;
-  grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
-  align-content: center;
   transform: skewY(10deg);
+}
+@media only screen and (max-width: 68.75em) {
+  .home-services {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3rem 3rem;
+  }
 }
 @media only screen and (max-width: 56.25em) {
   .home-services {
+    grid-template-columns: repeat(1, 1fr);
     padding: 3rem 3rem;
   }
 }
 @media only screen and (max-width: 37.05em) {
   .home-services {
-    padding: 3rem 3rem;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media only screen and (max-width: 31.25em) {
   .home-services {
-    padding: 3rem 3rem;
+    padding: 3rem 0;
   }
 }
 @media only screen and (max-width: 25em) {
