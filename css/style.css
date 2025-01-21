@@ -44,23 +44,23 @@ body {
 @media only screen and (max-width: 56.25em) {
   .container.home-layout {
     grid-template-rows: min-content repeat(3, min-content);
-    grid-template-rows: repeat(3, min-content) 400vh repeat(2, min-content) 70vh 70vh;
+    grid-template-rows: repeat(3, min-content) 400vh repeat(2, min-content) 70vh min-content;
   }
 }
 @media only screen and (max-width: 37.05em) {
   .container.home-layout {
     grid-template-rows: repeat(4, min-content);
-    grid-template-rows: repeat(3, min-content) 350vh repeat(2, min-content) 70vh 70vh;
+    grid-template-rows: repeat(3, min-content) 350vh repeat(2, min-content) 70vh 150vh;
   }
 }
 @media only screen and (max-width: 31.25em) {
   .container.home-layout {
-    grid-template-rows: repeat(3, min-content) 280vh repeat(2, min-content) 70vh 70vh;
+    grid-template-rows: repeat(3, min-content) 285vh repeat(2, min-content) 70vh min-content;
   }
 }
 @media only screen and (max-width: 25em) {
   .container.home-layout {
-    grid-template-rows: repeat(3, min-content) 200vh repeat(2, min-content) 70vh 70vh;
+    grid-template-rows: repeat(3, min-content) 295vh repeat(2, min-content) 70vh min-content;
   }
 }
 
@@ -1353,12 +1353,13 @@ hr {
 @media only screen and (max-width: 56.25em) {
   .home-services {
     grid-template-columns: repeat(1, 1fr);
-    padding: 3rem 3rem;
+    padding: 1rem 2rem;
   }
 }
 @media only screen and (max-width: 37.05em) {
   .home-services {
     grid-template-columns: repeat(1, 1fr);
+    padding: 1rem 2rem;
   }
 }
 @media only screen and (max-width: 31.25em) {
@@ -1370,6 +1371,7 @@ hr {
 @media only screen and (max-width: 25em) {
   .home-services {
     grid-template-columns: repeat(1, 1fr);
+    padding: 1rem 2rem;
   }
 }
 
