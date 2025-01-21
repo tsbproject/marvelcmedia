@@ -1341,6 +1341,7 @@ hr {
   margin-top: -40rem;
   grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
+  align-content: center;
   transform: skewY(10deg);
 }
 @media only screen and (max-width: 68.75em) {

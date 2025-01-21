@@ -158,7 +158,7 @@
     // grid-emplate-columns: repeat(auto-fit, minmax(40rem, 1fr));
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
-    // align-content: center;
+    align-content: center;
 
     transform: skewY(10deg);
 
