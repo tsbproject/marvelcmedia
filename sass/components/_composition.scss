@@ -1,6 +1,12 @@
 .composition {
     position: relative;
 
+    
+    @media only screen and (max-width:$bp-smaller) {
+        // left: 5rem;
+         
+    }
+
     @media only screen and (max-width:$bp-smallest) {
         left: 5rem;
          
@@ -16,6 +22,11 @@
         transition: all .2s;
         outline-offset: 2rem;
 
+        @media only screen and (max-width:$bp-smaller) {
+            width: 50%;
+             
+        }
+
         @media only screen and (max-width:$bp-smallest) {
             width: 38%;
              
@@ -24,6 +35,11 @@
         &--p1 {
             left: 0;
             top: -2rem;
+
+            // @media only screen and (max-width:$bp-smaller) {
+            //     left: 0;
+            //     top: 2rem;
+            // }
 
             @media only screen and (max-width:$bp-smallest) {
                 left: 0;
@@ -34,6 +50,12 @@
         &--p2 {
             right: 0;
             top: 2rem;
+
+            // @media only screen and (max-width:$bp-smaller) {
+            //     right: 12rem;
+            //     top: 2rem;
+            // }
+            
 
             @media only screen and (max-width:$bp-smallest) {
                 right: 12rem;
@@ -46,6 +68,12 @@
         &--p3 {
             left: 20%;
             top: 10rem;
+
+            // @media only screen and (max-width:$bp-smaller) {
+            //     left: 20%;
+            //     top: 7rem;
+    
+            // }
 
             @media only screen and (max-width:$bp-smallest) {
                 left: 20%;

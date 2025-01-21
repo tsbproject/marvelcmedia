@@ -22,7 +22,7 @@
 
     @media only screen and (max-width:$bp-smaller) {
         padding: 10rem 0 ;
-        margin-top: -15vh; 
+        margin-top: -10vh; 
        
         
     }
@@ -51,16 +51,63 @@
     animation: fadeIn 2s;
 
 
+    @media only screen and (max-width:$bp-medium) {
+        height: 180vh;
+     
+
+  }
+
+
+    @media only screen and (max-width:$bp-small) {
+        height: 180vh;
+     
+
+  }
+
+
+    @media only screen and (max-width:$bp-smaller) {
+          height: 180vh;
+       
+
+    }
+
+
+    
+
+
     
 }
 
 
 
 .section-home-services {
-    grid-column: col-start 2 / col-start 10;
+    grid-column: full-start  / full-end;
 
     display: grid;
 
+
+
+    background-image: linear-gradient(
+        rgba($color-primary-blue, 4), 
+        rgba($color-primary-blue-light, -1)), 
+        url(../img/designer2-x.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 100%;
+        background-attachment: fixed;
+        
+
+        transform: skewY(-10deg);
+
+        padding: 1rem 20rem;
+        margin-top: -10rem;
+
+        
+
+
+   
+   
+  
 
     @media only screen and (max-width:$bp-medium) {
         grid-column: full-start / full-end;
@@ -81,6 +128,8 @@
     }
 
     @media only screen and (max-width:$bp-smallest) {
+        padding: 1rem 0rem;
+        margin-top: -5rem;
         grid-column: full-start / full-end;
        
 
@@ -92,17 +141,23 @@
     align-content: center;
     text-align: center;
     text-decoration: line-through;
+    margin-top: -10rem;
+
+    transform: skewY(10deg);
 
 }
 
 
 .home-services {
     display: grid;
+    margin-top: -40rem;
  
 
-    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
     gap: 5rem;
     align-content: center;
+
+    transform: skewY(10deg);
 
     @media only screen and (max-width:$bp-medium) {
         // grid-template-columns: repeat(1, 1fr);
@@ -145,6 +200,7 @@
     padding: 3rem;
 
     @media only screen and (max-width:$bp-smallest) {
+      
         padding: 2rem .8rem;
 
     }
@@ -175,6 +231,106 @@
 
     }
 }
+
+
+.marquee-container {
+    grid-column: full-start / full-end;
+    background-color: $color-primary-blue;
+    position: relative;
+    // width: 100%;
+    overflow: hidden;
+  }
+
+  .marquee {
+    display: inline-block;
+    white-space: nowrap;
+    position: relative;
+    animation: scroll-left 60s linear infinite ; /* Adjusted for smooth, continuous scrolling */
+  }
+
+  @keyframes scroll-left {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+
+
+  /* Duplicate text to create a continuous scroll effect */
+  .marquee::after {
+    content: attr(data-text);
+    font-size: 15rem;
+    color: $color-primary-yellowgreen;
+    font-weight: 600;
+    font-family: $font-display;
+    padding-left: 2rem;
+
+    @media only screen and (max-width:$bp-medium) {
+        font-size: 9rem;
+        font-weight: 600;
+        font-family: $font-display;
+        padding-left: 2rem;
+       }
+
+    @media only screen and (max-width:$bp-small) {
+        font-size: 8rem;
+        font-weight: 600;
+        font-family: $font-display;
+        padding-left: 2rem;
+       }
+
+    @media only screen and (max-width:$bp-smaller) {
+        font-size: 8rem;
+        font-weight: 600;
+        font-family: $font-display;
+        padding-left: 2rem;
+       }
+
+    @media only screen and (max-width:$bp-smallest) {
+        font-size: 7rem;
+        font-weight: 600;
+        font-family: $font-display;
+        padding-left: 2rem;
+       }
+  }
+
+  .marquee span {
+    font-size: 15rem;
+    font-weight: 600;
+    font-family: $font-display;
+    padding-right: 2rem;
+
+    @media only screen and (max-width:$bp-medium) {
+        font-size: 9rem;
+        font-weight: 600;
+        font-family: $font-display;
+        padding-right: 2rem;
+       }
+
+    @media only screen and (max-width:$bp-small) {
+        font-size: 8rem;
+        font-weight: 600;
+        font-family: $font-display;
+        padding-right: 2rem;
+       }
+
+    @media only screen and (max-width:$bp-smaller) {
+        font-size: 8rem;
+        font-weight: 600;
+        font-family: $font-display;
+        padding-right: 2rem;
+       }
+
+    @media only screen and (max-width:$bp-smallest) {
+        font-size: 7rem;
+        font-weight: 600;
+        font-family: $font-display;
+        padding-right: 2rem;
+       }
+  }
 
 
 

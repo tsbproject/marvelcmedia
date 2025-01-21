@@ -26,37 +26,37 @@ body {
 
 .container.home-layout {
   display: grid;
-  grid-template-rows: repeat(4, min-content);
+  grid-template-rows: repeat(3, min-content) 160vh repeat(2, min-content) 70vh 70vh;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 }
 @media only screen and (max-width: 75em) {
   .container.home-layout {
-    grid-template-rows: repeat(3, min-content);
+    grid-template-rows: repeat(4, min-content);
   }
 }
 @media only screen and (max-width: 68.75em) {
   .container.home-layout {
-    grid-template-rows: repeat(3, min-content);
+    grid-template-rows: repeat(4, min-content);
   }
 }
 @media only screen and (max-width: 56.25em) {
   .container.home-layout {
-    grgrid-template-rows: 110vh 150vh repeat(1, min-content);
+    grid-template-rows: min-content repeat(3, min-content);
   }
 }
 @media only screen and (max-width: 37.05em) {
   .container.home-layout {
-    grid-template-rows: 110vh 140vh repeat(1, min-content);
+    grid-template-rows: repeat(4, min-content);
   }
 }
 @media only screen and (max-width: 31.25em) {
   .container.home-layout {
-    grid-template-rows: 110vh 115vh repeat(1, min-content);
+    grid-template-rows: repeat(7, min-content) 250vh;
   }
 }
 @media only screen and (max-width: 25em) {
   .container.home-layout {
-    grid-template-rows: min-content min-content min-content;
+    grid-template-rows: repeat(3, min-content) 320vh;
   }
 }
 
@@ -116,11 +116,25 @@ body {
   margin-top: 8rem;
 }
 
-@media only screen and (max-width: 25em) {
+@media only screen and (max-width: 56.25em) {
+  .hide-md {
+    visibility: hidden;
+  }
+}
+@media only screen and (max-width: 31.25em) {
   .hide-sm {
     visibility: hidden;
   }
 }
+@media only screen and (max-width: 25em) {
+  .hide-xm {
+    visibility: hidden;
+  }
+}
+.t-center {
+  text-align: center;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -313,6 +327,11 @@ body {
   transition: all 0.2s;
   outline-offset: 2rem;
 }
+@media only screen and (max-width: 31.25em) {
+  .composition__photo {
+    width: 50%;
+  }
+}
 @media only screen and (max-width: 25em) {
   .composition__photo {
     width: 38%;
@@ -382,17 +401,16 @@ body {
 
 .portfolio {
   grid-column: full-start/full-end;
-  background-color: #8AB800;
   margin-top: 0.2rem;
   padding: 25px;
   text-align: center;
 }
 .portfolio__header {
+  font-size: 2rem;
   text-align: center;
-  color: #11009E;
+  color: #8AB800;
   margin-top: 5rem;
   align-content: center;
-  filter: brightness(50%);
 }
 
 .portfolio-inner {
@@ -437,7 +455,6 @@ body {
   justify-self: center;
   align-items: center;
   font-size: 1.5rem;
-  font-family: "Oxygen" sans-serif;
   font-weight: 800;
   text-align: center;
   background-color: #ffffff;
@@ -552,11 +569,61 @@ body {
   fill: #fff;
 }
 
+.testimonies-slides {
+  grid-column: full-start/full-end;
+  background-color: #11009E;
+  display: grid;
+}
+
+.slider {
+  font-size: 1.7rem;
+  text-align: center;
+  position: relative;
+  max-width: 100%;
+  height: 60vh;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.controls {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.controls button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.controls button:hover {
+  background-color: #0056b3;
+}
+
+.testimony-header {
+  align-self: center;
+}
+
 .header {
   grid-column: full-start/full-end;
   height: 110vh;
   width: auto;
-  background-image: linear-gradient(#11009e, #141809);
+  background-image: linear-gradient(#11009e, #4942e4);
   clip-path: polygon(0 0, 100% 0%, 100% 70%, 0% 100%);
   position: relative;
 }
@@ -1041,6 +1108,128 @@ hr {
   transform: rotate(-135deg);
 }
 
+.footer {
+  grid-column: full-start/full-end;
+  background-color: #222;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  gap: 3rem;
+  color: #fff;
+  padding: 40px 20px;
+  position: relative;
+}
+@media only screen and (max-width: 56.25em) {
+  .footer {
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    justify-items: center;
+  }
+}
+@media only screen and (max-width: 37.05em) {
+  .footer {
+    justify-items: center;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .footer {
+    justify-items: center;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .footer {
+    justify-items: center;
+  }
+}
+
+.footer h3 {
+  margin-bottom: 15px;
+}
+
+.footer p, .footer a {
+  color: #aaa;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.footer .logo img {
+  width: 150px;
+}
+
+.footer .social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.footer .social-icons a {
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #444;
+  text-decoration: none;
+}
+
+.footer .social-icons a:hover {
+  background-color: #666;
+}
+
+.footer-contact-details {
+  display: grid;
+  column-gap: 4rem;
+  row-gap: 2rem;
+  justify-content: center;
+  align-content: center;
+}
+
+.footer-contact-details li {
+  list-style: none;
+  fill: #8AB800;
+}
+
+.footer-contact-svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: #9ACD32;
+}
+
+.para-text {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-icon-svg {
+  width: 4rem;
+  height: 4rem;
+  fill: #9ACD32;
+  border: 0.2rem solid #9ACD32;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.footer-header {
+  font-size: 1.5rem;
+}
+
+.legal {
+  margin-top: 1rem;
+  color: #8AB800;
+  font-size: 1.2rem;
+}
+
 .section-about {
   grid-column: full-start/full-end;
   background-color: #F2F1EB;
@@ -1062,7 +1251,7 @@ hr {
 @media only screen and (max-width: 31.25em) {
   .section-about {
     padding: 10rem 0;
-    margin-top: -15vh;
+    margin-top: -10vh;
   }
 }
 @media only screen and (max-width: 25em) {
@@ -1081,10 +1270,33 @@ hr {
   margin-top: 10rem;
   animation: fadeIn 2s;
 }
+@media only screen and (max-width: 56.25em) {
+  .home-about {
+    height: 180vh;
+  }
+}
+@media only screen and (max-width: 37.05em) {
+  .home-about {
+    height: 180vh;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .home-about {
+    height: 180vh;
+  }
+}
 
 .section-home-services {
-  grid-column: col-start 2/col-start 10;
+  grid-column: full-start/full-end;
   display: grid;
+  background-image: linear-gradient(#11009e, rgba(73, 66, 228, 0)), url(../img/designer2-x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+  background-attachment: fixed;
+  transform: skewY(-10deg);
+  padding: 1rem 20rem;
+  margin-top: -10rem;
 }
 @media only screen and (max-width: 56.25em) {
   .section-home-services {
@@ -1103,6 +1315,8 @@ hr {
 }
 @media only screen and (max-width: 25em) {
   .section-home-services {
+    padding: 1rem 0rem;
+    margin-top: -5rem;
     grid-column: full-start/full-end;
   }
 }
@@ -1112,13 +1326,17 @@ hr {
   align-content: center;
   text-align: center;
   text-decoration: line-through;
+  margin-top: -10rem;
+  transform: skewY(10deg);
 }
 
 .home-services {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  margin-top: -40rem;
+  grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
   gap: 5rem;
   align-content: center;
+  transform: skewY(10deg);
 }
 @media only screen and (max-width: 56.25em) {
   .home-services {
@@ -1173,6 +1391,109 @@ hr {
 @media only screen and (max-width: 25em) {
   .home-service__btn {
     width: 20rem;
+  }
+}
+
+.marquee-container {
+  grid-column: full-start/full-end;
+  background-color: #11009E;
+  position: relative;
+  overflow: hidden;
+}
+
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  position: relative;
+  animation: scroll-left 60s linear infinite; /* Adjusted for smooth, continuous scrolling */
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+/* Duplicate text to create a continuous scroll effect */
+.marquee::after {
+  content: attr(data-text);
+  font-size: 15rem;
+  color: #8AB800;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  padding-left: 2rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .marquee::after {
+    font-size: 9rem;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    padding-left: 2rem;
+  }
+}
+@media only screen and (max-width: 37.05em) {
+  .marquee::after {
+    font-size: 8rem;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    padding-left: 2rem;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .marquee::after {
+    font-size: 8rem;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    padding-left: 2rem;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .marquee::after {
+    font-size: 7rem;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    padding-left: 2rem;
+  }
+}
+
+.marquee span {
+  font-size: 15rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  padding-right: 2rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .marquee span {
+    font-size: 9rem;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    padding-right: 2rem;
+  }
+}
+@media only screen and (max-width: 37.05em) {
+  .marquee span {
+    font-size: 8rem;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    padding-right: 2rem;
+  }
+}
+@media only screen and (max-width: 31.25em) {
+  .marquee span {
+    font-size: 8rem;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    padding-right: 2rem;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .marquee span {
+    font-size: 7rem;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    padding-right: 2rem;
   }
 }
 
