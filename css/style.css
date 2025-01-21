@@ -44,7 +44,7 @@ body {
 @media only screen and (max-width: 56.25em) {
   .container.home-layout {
     grid-template-rows: min-content repeat(3, min-content);
-    grid-template-rows: repeat(3, min-content) 400vh repeat(2, min-content) 70vh min-content;
+    grid-template-rows: repeat(3, min-content) 250vh repeat(2, min-content) 70vh min-content;
   }
 }
 @media only screen and (max-width: 37.05em) {
@@ -60,7 +60,7 @@ body {
 }
 @media only screen and (max-width: 25em) {
   .container.home-layout {
-    grid-template-rows: repeat(3, min-content) 295vh repeat(2, min-content) 70vh min-content;
+    grid-template-rows: repeat(3, min-content) 300vh repeat(2, min-content) 70vh min-content;
   }
 }
 
@@ -1289,6 +1289,11 @@ hr {
     height: 180vh;
   }
 }
+@media only screen and (max-width: 31.25em) {
+  .home-about {
+    height: 165vh;
+  }
+}
 
 .section-home-services {
   grid-column: full-start/full-end;
@@ -1299,11 +1304,19 @@ hr {
   background-position: 100%;
   background-attachment: fixed;
   transform: skewY(-10deg);
+  -moz-transform: skewY(-10deg);
   padding: 1rem 20rem;
   margin-top: -10rem;
 }
+@media only screen and (max-width: 68.75em) {
+  .section-home-services {
+    padding: 1rem 10rem;
+    grid-column: full-start/full-end;
+  }
+}
 @media only screen and (max-width: 56.25em) {
   .section-home-services {
+    padding: 1rem 2rem;
     grid-column: full-start/full-end;
   }
 }
@@ -1334,26 +1347,27 @@ hr {
   text-decoration: line-through;
   margin-top: -10rem;
   transform: skewY(10deg);
+  -moz-transform: skewY(10deg);
 }
 
 .home-services {
   display: grid;
   margin-top: -40rem;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
   gap: 5rem;
   align-content: center;
   transform: skewY(10deg);
+  -moz-transform: skewY(10deg);
 }
 @media only screen and (max-width: 68.75em) {
   .home-services {
-    grid-template-columns: repeat(1, 1fr);
     padding: 3rem 3rem;
   }
 }
 @media only screen and (max-width: 56.25em) {
   .home-services {
     grid-template-columns: repeat(1, 1fr);
-    padding: 1rem 2rem;
+    padding: 10rem 5rem;
   }
 }
 @media only screen and (max-width: 37.05em) {
@@ -1371,7 +1385,7 @@ hr {
 @media only screen and (max-width: 25em) {
   .home-services {
     grid-template-columns: repeat(1, 1fr);
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
   }
 }
 
@@ -1383,6 +1397,11 @@ hr {
   row-gap: 2rem;
   border-radius: 2rem;
   padding: 3rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .home-service {
+    padding: 0;
+  }
 }
 @media only screen and (max-width: 25em) {
   .home-service {

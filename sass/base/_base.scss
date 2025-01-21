@@ -68,7 +68,7 @@
       
       @media only screen and (max-width: $bp-medium) {
          grid-template-rows:  min-content  repeat(3, min-content);
-         grid-template-rows: repeat(3, min-content) 400vh repeat(2, min-content) 70vh min-content;
+         grid-template-rows: repeat(3, min-content) 250vh repeat(2, min-content) 70vh min-content;
  
    } 
       
@@ -87,7 +87,7 @@
      
  
  @media only screen and (max-width: $bp-smallest) {
-   grid-template-rows: repeat(3, min-content) 295vh repeat(2, min-content) 70vh min-content;
+   grid-template-rows: repeat(3, min-content) 300vh repeat(2, min-content) 70vh min-content;
 
     
      

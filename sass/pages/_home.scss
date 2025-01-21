@@ -73,6 +73,15 @@
 
 
     
+    @media only screen and (max-width:$bp-smaller) {
+        height: 165vh;
+     
+
+  }
+
+
+
+    
 
 
     
@@ -82,7 +91,6 @@
 
 .section-home-services {
     grid-column: full-start  / full-end;
-
     display: grid;
 
 
@@ -98,6 +106,7 @@
         
 
         transform: skewY(-10deg);
+        -moz-transform: skewY(-10deg);
 
         padding: 1rem 20rem;
         margin-top: -10rem;
@@ -106,10 +115,18 @@
 
 
    
-   
+        @media only screen and (max-width:$bp-large) {
+        
+            padding: 1rem 10rem;
+            grid-column: full-start / full-end;
+           
+    
+        }
   
 
     @media only screen and (max-width:$bp-medium) {
+        
+        padding: 1rem 2rem;
         grid-column: full-start / full-end;
        
 
@@ -146,6 +163,7 @@
     margin-top: -10rem;
 
     transform: skewY(10deg);
+    -moz-transform: skewY(10deg);
 
 }
 
@@ -155,22 +173,23 @@
     margin-top: -40rem;
  
 
-    // grid-emplate-columns: repeat(auto-fit, minmax(40rem, 1fr));
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+    // grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
     align-content: center;
 
     transform: skewY(10deg);
+    -moz-transform: skewY(10deg);
 
     @media only screen and (max-width:$bp-large) {
-        grid-template-columns: repeat(1, 1fr);
+        // grid-template-columns: repeat(2, 1fr);
         padding: 3rem 3rem;
 
     }
 
     @media only screen and (max-width:$bp-medium) {
         grid-template-columns: repeat(1, 1fr);
-        padding: 1rem 2rem;
+        padding: 10rem 5rem;
 
     }
 
@@ -189,7 +208,7 @@
 
     @media only screen and (max-width:$bp-smallest) {
         grid-template-columns: repeat(1, 1fr);
-        padding: 1rem 2rem;
+        padding: 1rem 1rem;
      
 
     }
@@ -208,6 +227,12 @@
     row-gap: 2rem;
     border-radius: 2rem;
     padding: 3rem;
+
+    @media only screen and (max-width:$bp-medium) {
+      
+        padding: 0;
+
+    }
 
     @media only screen and (max-width:$bp-smallest) {
       
