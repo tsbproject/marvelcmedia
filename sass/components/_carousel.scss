@@ -1,6 +1,11 @@
 .portfolio {
     grid-column: full-start / full-end;
 
+  @media only screen and (max-width:$bp-smallest) {
+
+    margin-top: 40rem;
+  }
+
 
 
     margin-top: 0.2rem;
@@ -12,7 +17,7 @@
       font-size: 2rem;
       text-align: center;
       color: $color-primary-yellowgreen;
-      margin-top: 5rem;
+      margin-top: 12rem;
       align-content: center;
   
   
@@ -73,6 +78,19 @@
          
                
         }
+
+        // @media only screen and (max-width:$bp-smallest) {
+  
+        //   font-size: $default-font-size2;
+        //   font-weight: 400;
+        //   color: $color-primary-blue-light;
+        //   text-align: center;
+        //   margin-top: 1rem;
+  
+         
+               
+        // }
+  
   
     }
   

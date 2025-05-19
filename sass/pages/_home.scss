@@ -73,8 +73,8 @@
 
 
     
-    @media only screen and (max-width:$bp-smaller) {
-        height: 165vh;
+    @media only screen and (max-width:$bp-smallest) {
+        height: 190vh;
      
 
   }
@@ -105,11 +105,12 @@
         background-attachment: fixed;
         
 
-        transform: skewY(-10deg);
-        -moz-transform: skewY(-10deg);
+        // transform: skewY(-10deg);
+        // -moz-transform: skewY(-10deg);
 
         padding: 1rem 20rem;
         margin-top: -10rem;
+        height: 200vh;
 
         
 
@@ -150,6 +151,7 @@
         padding: 1rem 0rem;
         margin-top: -5rem;
         grid-column: full-start / full-end;
+        height: 400vh;
        
 
     }
@@ -162,15 +164,15 @@
     text-decoration: line-through;
     margin-top: -10rem;
 
-    transform: skewY(10deg);
-    -moz-transform: skewY(10deg);
+    // transform: skewY(10deg);
+    // -moz-transform: skewY(10deg);
 
 }
 
 
 .home-services {
     display: grid;
-    margin-top: -40rem;
+    margin-top: -20rem;
  
 
     grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
@@ -178,8 +180,8 @@
     gap: 5rem;
     align-content: center;
 
-    transform: skewY(10deg);
-    -moz-transform: skewY(10deg);
+    // transform: skewY(10deg);
+    // -moz-transform: skewY(10deg);
 
     @media only screen and (max-width:$bp-large) {
         // grid-template-columns: repeat(2, 1fr);
@@ -209,6 +211,7 @@
     @media only screen and (max-width:$bp-smallest) {
         grid-template-columns: repeat(1, 1fr);
         padding: 1rem 1rem;
+
      
 
     }

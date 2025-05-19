@@ -11,7 +11,7 @@ html {
   font-size: 62.5%;
   font-size: 10px;
 }
-@media only screen and (max-width: 75em) {
+@media only screen and (max-width: 25em) {
   html {
     font-size: 50%;
   }
@@ -409,11 +409,16 @@ body {
   padding: 25px;
   text-align: center;
 }
+@media only screen and (max-width: 25em) {
+  .portfolio {
+    margin-top: 40rem;
+  }
+}
 .portfolio__header {
   font-size: 2rem;
   text-align: center;
   color: #8AB800;
-  margin-top: 5rem;
+  margin-top: 12rem;
   align-content: center;
 }
 
@@ -1289,9 +1294,9 @@ hr {
     height: 180vh;
   }
 }
-@media only screen and (max-width: 31.25em) {
+@media only screen and (max-width: 25em) {
   .home-about {
-    height: 165vh;
+    height: 190vh;
   }
 }
 
@@ -1303,10 +1308,9 @@ hr {
   background-size: cover;
   background-position: 100%;
   background-attachment: fixed;
-  transform: skewY(-10deg);
-  -moz-transform: skewY(-10deg);
   padding: 1rem 20rem;
   margin-top: -10rem;
+  height: 200vh;
 }
 @media only screen and (max-width: 68.75em) {
   .section-home-services {
@@ -1337,6 +1341,7 @@ hr {
     padding: 1rem 0rem;
     margin-top: -5rem;
     grid-column: full-start/full-end;
+    height: 400vh;
   }
 }
 
@@ -1346,18 +1351,14 @@ hr {
   text-align: center;
   text-decoration: line-through;
   margin-top: -10rem;
-  transform: skewY(10deg);
-  -moz-transform: skewY(10deg);
 }
 
 .home-services {
   display: grid;
-  margin-top: -40rem;
+  margin-top: -20rem;
   grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
   gap: 5rem;
   align-content: center;
-  transform: skewY(10deg);
-  -moz-transform: skewY(10deg);
 }
 @media only screen and (max-width: 68.75em) {
   .home-services {
